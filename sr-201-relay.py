@@ -312,7 +312,8 @@ class Sr201(object):
         values[6] = values[6][0:14]
 
         for i in range(len(values)):
-            sys.stdout.write('%s=%s\n' % (self.CONFIG_NAMES[i], values[i]))
+            if i != 3:  # just skip the unknown entry. It's always blank anyway
+                sys.stdout.write('%s=%s\n' % (self.CONFIG_NAMES[i], values[i]))
         # sys.stdout.write('%s=(not-sent)\n' % (self.CONFIG_NAMES[-1],))
 
     def do_reset(self, command):
