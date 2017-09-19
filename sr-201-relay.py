@@ -1,5 +1,7 @@
 #!/usr/bin/python
 #
+# Modified for use with Indigo
+#
 # SYNOPSIS
 #   sr-201-relay.py relay-hostname [command...]
 #
